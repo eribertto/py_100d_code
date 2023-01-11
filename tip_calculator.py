@@ -11,11 +11,18 @@
 #Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
 
 #Write your code below this line 👇
-bill = 150
-tip_prcnt = 12/100 # float
-bill_with_tip = round((bill * (1 + tip_prcnt)), 2)
-group = 5
+welcome_msg = "Welcome to the Tip Calculator"
+print(welcome_msg, "\n")
+ask_total_bill = float(input("What is the total bill? $"))
+tip_to_give = int(input("What percent tip you like to give? 10, 12 or 15? "))
+no_of_people = input("How many people to split the bill? ")
+
+#bill = 150
+bill = ask_total_bill
+tip_prcnt = tip_to_give/100 # float
+bill_with_tip = round((bill * (1 + tip_prcnt)), 2) # needs formatting here
+group = int(no_of_people)
 per_person_amount = (bill * 1+tip_prcnt) / group
-print(f"The total bill {bill} with 12% tip is {bill_with_tip}")
+print(f"The total bill ${bill} with {tip_to_give}% tip is ${bill_with_tip}")
 msg = "Each person should pay: "
-print(f"{msg} {per_person_amount}")
+print(f"{msg} ${per_person_amount}")
