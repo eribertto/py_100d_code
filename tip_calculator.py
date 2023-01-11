@@ -23,7 +23,11 @@ no_of_people = int(input("How many people to split the bill? "))
 
 # calculate bill per person
 per_person_amount = (ask_total_bill * (1 + (tip_to_give/100)))/no_of_people
-print(f'Per person amount is {per_person_amount}')
+# format to 2 decimal places
+# https://www.adamsmith.haus/python/answers/how-to-limit-a-float-to-two-decimal-places-in-python
+format_2decimal = "{:.2f}".format(per_person_amount)
+#print(f'Per person amount is {per_person_amount}')
+print(f'Per person amount is {format_2decimal}')
 
 
 
