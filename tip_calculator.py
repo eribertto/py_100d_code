@@ -21,6 +21,7 @@ no_of_people = input("How many people to split the bill? ")
 bill = ask_total_bill
 tip_prcnt = tip_to_give/100 # float
 bill_with_tip = round((bill * (1 + tip_prcnt)), 2) # needs formatting here
+#bill_with_tip = (bill * (1 + tip_prcnt))
 group = int(no_of_people)
 per_person_amount = (bill * 1+tip_prcnt) / group
 # format to 2 decimal places
