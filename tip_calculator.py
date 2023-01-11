@@ -23,6 +23,8 @@ tip_prcnt = tip_to_give/100 # float
 bill_with_tip = round((bill * (1 + tip_prcnt)), 2) # needs formatting here
 group = int(no_of_people)
 per_person_amount = (bill * 1+tip_prcnt) / group
+# format to 2 decimal places
+formatted_amount = "{:.2f}".format(per_person_amount)
 print(f"The total bill ${bill} with {tip_to_give}% tip is ${bill_with_tip}")
 msg = "Each person should pay: "
-print(f"{msg} ${per_person_amount}")
+print(f"{msg} ${formatted_amount}")
