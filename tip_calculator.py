@@ -24,6 +24,7 @@ bill_with_tip = round((bill * (1 + tip_prcnt)), 2) # needs formatting here
 #bill_with_tip = (bill * (1 + tip_prcnt))
 group = int(no_of_people)
 per_person_amount = (bill * 1+tip_prcnt) / group
+print(f'per person amount is {per_person_amount}')
 # format to 2 decimal places
 formatted_amount = "{:.2f}".format(per_person_amount)
 print(f"The total bill ${bill} with {tip_to_give}% tip is ${bill_with_tip}")
