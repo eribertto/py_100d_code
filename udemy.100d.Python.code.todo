@@ -6,6 +6,17 @@ https://exercism.org/tracks/python
 
 todo exercise:
 	https://exercism.org/tracks/python/exercises/guidos-gorgeous-lasagna/edit
+	error lines in the script:
+		11, 44 remove the todos
+		line 31 trailing whitespace
+		line 41 trailing whitespace
+		line 34 change all caps to snake case
+		line 45 final newline missing
+
+	next set of exercises:
+		Ghost Gobble Arcade Game
+		Two Fer
+		Currency Exchange
 
 
 --
