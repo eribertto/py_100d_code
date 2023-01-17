@@ -4,13 +4,7 @@
 # https://stackoverflow.com/questions/11621740/how-to-determine-whether-a-year-is-a-leap-year
 
 import calendar
-year = input("Enter the year to check for leap year: ")
-if year.isdigit():
-    year = int(year)
-else:
-    print("Invalid input")
-    exit
-    
+year = int(input("Enter the year to check for leap year: "))
 if calendar.isleap(year):
     print(f"{year} is a leap year!")
 else:
