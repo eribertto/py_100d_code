@@ -13,6 +13,8 @@ if ask_user >= 120:
         print("Please pay $5.")
     elif get_age <= 18:
         print("Please pay $7.")
+    elif get_age >= 45 and get_age <= 55:
+        print("Your age bracket is entitled to a free ride its on the house lol!")
     else:
         print("Please pay $12.")
 else:
