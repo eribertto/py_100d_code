@@ -17,9 +17,9 @@ extra_cheese = input("Do you want extra cheese? Y or N: ")
 # Write your code below this line 👇
 bill = 0
 
-pep_topping_small = 2
-pep_topping_medlarge = 3
-cheese_top = 1
+# pep_topping_small = 2
+# pep_topping_medlarge = 3
+# cheese_top = 1
 
 if size == "S":
     bill += 15
